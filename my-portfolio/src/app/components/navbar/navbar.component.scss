@@ -1,0 +1,32 @@
+// .navbar {
+//   background: rgb(170, 0, 255);;
+//   border-bottom: 5px solid rgb(213, 213, 213);
+// }
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: rgb(224, 208, 230);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -4px;
+  left: 50%;
+  background: rgb(224, 208, 230);
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
