@@ -11,6 +11,12 @@ import { compileNgModule } from '@angular/compiler';
 })
 export class NavbarComponent {
   isOpen = false;
+  isScrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 50; // Adjust the scroll threshold as needed
+  }
   
   toggleMenu() {
     this.isOpen = !this.isOpen;

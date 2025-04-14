@@ -4,33 +4,71 @@
 @tailwind utilities;
 
 body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
-    overflow: auto;
-    background: rgb(2,0,36);
-    background: linear-gradient(56deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 77%, rgba(15,47,102,1) 100%);      
-    background-size: cover; /* Prevent the gradient from repeating */
-    background-attachment: fixed; /* Fix the background for smoother scrolling */
-    z-index: -1;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  scrollbar-width: none;
+  background: linear-gradient(45deg, #2b1055, #7597de, #6b46c1);
+  background-size: 400% 400%; /* Makes the gradient larger for smooth animation */
+  animation: gradientAnimation 15s ease infinite; /* Infinite animation */
 }
 
-/* Custom scrollbar styling */
-body::-webkit-scrollbar {
-    width: 8px;
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #6b46c1; /* Purple color */
-    border-radius: 4px;
+  50% {
+    background-position: 100% 50%;
   }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background-color: #805ad5; /* Lighter purple on hover */
+  100% {
+    background-position: 0% 50%;
   }
-  
-  body::-webkit-scrollbar-track {
-    background-color: #1a202c; /* Dark background for the track */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* For small screens */
+  body {
+    font-size: 14px; /* Reduce font size */
+    padding: 0 1rem; /* Add padding to the sides */
   }
+
+  h1, h2, h3 {
+    font-size: 90%; /* Reduce heading font sizes */
+  }
+
+  p {
+    font-size: 0.9rem; /* Reduce paragraph font size */
+    line-height: 1.5; /* Adjust line height for readability */
+  }
+
+  .container {
+    max-width: 90%; /* Reduce container width */
+    margin: 0 auto; /* Center the container */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For large screens */
+  body {
+    font-size: 18px; /* Increase font size */
+    padding: 0 2rem; /* Add more padding to the sides */
+  }
+
+  h1, h2, h3 {
+    font-size: 110%; /* Increase heading font sizes */
+  }
+
+  p {
+    font-size: 1.1rem; /* Increase paragraph font size */
+    line-height: 1.8; /* Adjust line height for better readability */
+  }
+
+  .container {
+    max-width: 80%; /* Increase container width */
+    margin: 0 auto; /* Center the container */
+  }
+}
