@@ -10,8 +10,7 @@ body {
   width: 100vw;
   overflow: auto;
   scrollbar-width: none;
-  background: linear-gradient(45deg, #2b1055, #7597de, #6b46c1);
-  background-size: 400% 400%; /* Makes the gradient larger for smooth animation */
+  background: linear-gradient(45deg, #2f0b68, #256ada, #290480);  background-size: 500% 500%; /* Makes the gradient larger for smooth animation */
   animation: gradientAnimation 15s ease infinite; /* Infinite animation */
 }
 

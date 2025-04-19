@@ -2,17 +2,14 @@
   color: white;
   padding: 2rem;
   text-align: center;
-  overflow: auto;
-  scrollbar-width: none; /* Hide scrollbar for Firefox */
-  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
 
   h3 {
-    margin-top: 2rem;
+    color: #fbbf24; /* Yellow for section titles */
   }
 
   p {
-    margin-top: 1rem;
     line-height: 1.8;
+    margin-top: 1rem;
   }
 
   .experience {
@@ -23,49 +20,32 @@
       padding: 0;
 
       li {
-        margin-bottom: 1.5rem;
+        background: #1f2937; /* Dark gray background for experience cards */
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px); /* Slight lift on hover */
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
 
         strong {
-          font-weight: bold;
+          font-size: 1.25rem;
+          color: #fbbf24; /* Yellow for job titles */
         }
 
         em {
           font-style: italic;
+          color: #93c5fd; /* Light blue for company names */
+        }
+
+        p {
+          margin-top: 0.5rem;
+          line-height: 1.6;
         }
       }
-    }
-  }
-
-  /* Media Queries */
-  @media (max-width: 768px) {
-    /* For small screens */
-    padding: 1rem;
-    h3 {
-      font-size: 2.5rem;
-      margin-top: 1rem;
-    }
-    p {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-    .experience {
-      margin-top: 2rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    /* For large screens */
-    padding: 4rem;
-    h3 {
-      font-size: 3.5rem;
-      margin-top: 3rem;
-    }
-    p {
-      font-size: 1.25rem;
-      margin-top: 1.5rem;
-    }
-    .experience {
-      margin-top: 4rem;
     }
   }
 }

@@ -1,67 +1,71 @@
 <div class="projects min-h-screen p-10 text-white flex flex-col items-center justify-center h-screen">
   <h2 class="text-5xl font-bold text-center mb-8">Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-screen-lg justify-between">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-screen-lg">
     <!-- Project 1 -->
     <div class="project-container">
       <div
-        class="project-card p-6 bg-black border-2 border-purple-500 rounded-lg hover:bg-blue-900 transition cursor-pointer"
+        class="project-card p-6 bg-black border-2 border-purple-500 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition cursor-pointer"
         (click)="toggleProjectDetails(1)">
         <div class="flex text-green-500">
-          <h3 class="text-2xl font-bold">Workflow Builder</h3>
+          <h3 class="text-2xl font-bold">Workflow Visualization Tool</h3>
           <img src="./assets/images/wf.jpg" alt="game" class="w-12 h-12 m-2">
         </div>
         <p class="mt-2">SVG & Angular-based workflow visualization tool. Visualize a graph with linkages and node
           format.</p>
       </div>
       <div *ngIf="selectedProject === 1"
-        class="project-details p-6 bg-gray-800 border-2 border-purple-500 rounded-lg mt-4">
+        class="project-details p-6 bg-gray-800 border-2 border-blue-700 rounded-lg mt-4">
         <p class="text-lg">
           A workflow visualization tool built with SVG and Angular, allowing users to create and manage workflows
           visually. You can drag and drop elements with zoom and pan, connect them, and customize the workflow to suit
-          your needs.
-
+          your needs. The tool is designed to be user-friendly and intuitive, making it easy for users to visualize
+          complex workflows.
         </p>
         <a href="https://github.com/poojaG16/svg-worflow-visualization-tool.git" target="_blank"
-          class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-500 transition">
+          class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
           View on GitHub
         </a>
       </div>
     </div>
 
     <!-- Project 2 -->
-    <!-- <div class="project-container">
+    <div class="project-container">
       <div
-        class="project-card p-6 bg-black border-2 border-purple-500 rounded-lg hover:bg-purple-500 transition cursor-pointer"
-        (click)="toggleProjectDetails(2)"
-      >
-        <h3 class="text-2xl font-bold">Dashboard</h3>
-        <p class="mt-2">Responsive Dashboard with Tailwind</p>
+        class="project-card p-6 bg-black border-2 border-purple-500 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition cursor-pointer"
+        (click)="toggleProjectDetails(2)">
+        <div class="flex text-green-500">
+          <h3 class="text-2xl font-bold">Chat Application</h3>
+          <img src="./assets/images/chat.jpeg" alt="chat" class="w-12 h-11 ml-6 mt-4">
+        </div>
+        <p class="mt-2">SVG & Angular-based workflow visualization tool. Visualize a graph with linkages and node
+          format.</p>
       </div>
-      <div
-        *ngIf="selectedProject === 2"
-        class="project-details p-6 bg-gray-800 border-2 border-purple-500 rounded-lg mt-4"
-      >
+      <div *ngIf="selectedProject === 2"
+        class="project-details p-6 bg-gray-800 border-2 border-blue-700 rounded-lg mt-4">
         <p class="text-lg">
-          A responsive dashboard built with Tailwind CSS, featuring dynamic charts and data visualization.
+          A real time chat appication built with Angular, Node.js, and Socket.io. It features a responsive design,
+          user authentication, and real-time messaging capabilities. The app allows users to create and join chat
+          rooms,
+          send and receive messages instantly, and manage their profiles. The backend is powered by Node.js and
+          Socket.io,
+          ensuring efficient real-time communication. 
         </p>
-        <a
-          href="https://github.com/poojaG16/Dashboard.git"
-          target="_blank"
-          class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-500 transition"
-        >
+        <a href="https://github.com/poojaG16/chat-application.git" target="_blank"
+          class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
           View on GitHub
         </a>
       </div>
-    </div> -->
+    </div>
+
 
     <!-- Project 3 -->
     <div class="project-container">
       <div
-        class="project-card p-6 bg-black border-2 border-blue-500 rounded-lg hover:bg-blue-900 transition cursor-pointer"
+        class="project-card p-6 bg-black border-2 border-blue-500 rounded-lg hover:bg-gray-100 hover:text-gray-900 transition cursor-pointer"
         (click)="toggleProjectDetails(3)">
         <div class="flex items-center text-green-400">
           <h3 class="text-2xl font-bold">Game-Based Learning</h3>
-          <img src="./assets/images/game.jpg" alt="game" class="w-12 h-12 m-2">
+          <img src="./assets/images/game.jpg" alt="game" class="w-12 h-12 ml-6 mt-6">
         </div>
         <p class="text-lg">
           A small angular based game app for learning directives, signals & RxJs concepts in fun way.
@@ -69,12 +73,13 @@
 
       </div>
       <div *ngIf="selectedProject === 3"
-        class="project-details p-6 bg-gray-800 border-2 border-purple-500 rounded-lg mt-4">
+        class="project-details p-6 bg-gray-800 border-2 border-blue-700 rounded-lg mt-4">
         <p class="mt-2">An Angular-based game app featuring a directive sort game with a reusable drag-and-drop
-          directive. Includes a counter race game utilizing Angular signals and RxJS.</p>
+          directive. Includes a counter race game utilizing Angular signals and RxJS.
+        </p>
 
         <a href="https://github.com/poojaG16/angular-game-app.git" target="_blank"
-          class="mt-4 inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-500 transition">
+          class="mt-4 inline-block bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
           View on GitHub
         </a>
       </div>

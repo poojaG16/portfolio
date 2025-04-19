@@ -1,83 +1,101 @@
 <div class="home flex flex-col items-center justify-center min-h-screen text-white text-center px-4 pt-16 md:pt-24">
-  <h2 class="text-5xl font-bold animate-fade-in">Welcome to Pooja's Portfolio</h2>
-  <p class="mt-4 text-4xl md:text-4xl text-gray-100">Frontend Developer | Angular | SVG | HTML | CSS | JavaScript</p>
+  <h2 class="text-5xl font-bold animate-fade-in mb-4">
+    Welcome to <span class="text-yellow-400">Pooja's Portfolio</span>
+  </h2>
+  <p class="mt-4 text-2xl md:text-3xl text-gray-200 leading-relaxed">
+    Frontend Developer | Angular | SVG | HTML | CSS | JavaScript
+  </p>
   <a routerLink="/projects"
-    class="mt-6 bg-purple-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-purple-500 transition">View Projects</a>
+    class="mt-6 bg-gradient-to-r from-purple-600 to-blue-500 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:shadow-xl hover:from-purple-500 hover:to-blue-400 transition">
+    View Projects
+  </a>
 
   <!-- Skills Section -->
   <div class="skills mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-screen-lg">
     <!-- Frontend Skills -->
     <div>
-      <h2 class="text-2xl font-bold mb-4">Frontend</h2>
-      <hr>
-      <br>
+      <h2 class="text-2xl font-bold mb-4 text-yellow-400">Frontend</h2>
+      <hr class="border-yellow-400 mb-4">
       <ul class="flex flex-wrap justify-center gap-6">
         <li class="flex flex-col items-center">
           <i class="fa-brands fa-angular text-red-600 text-5xl"></i>
-          <span class="mt-2 text-lg">Angular</span>
+          <span class="mt-2 text-lg text-gray-300">Angular</span>
         </li>
         <li class="flex flex-col items-center">
           <i class="fa-brands fa-html5 text-orange-500 text-5xl"></i>
-          <span class="mt-2 text-lg">HTML</span>
+          <span class="mt-2 text-lg text-gray-300">HTML</span>
         </li>
         <li class="flex flex-col items-center">
           <i class="fa-brands fa-css3-alt text-blue-500 text-5xl"></i>
-          <span class="mt-2 text-lg">CSS</span>
+          <span class="mt-2 text-lg text-gray-300">CSS</span>
         </li>
         <li class="flex flex-col items-center">
           <i class="fa-brands fa-js text-yellow-500 text-5xl"></i>
-          <span class="mt-2 text-lg">JavaScript</span>
+          <span class="mt-2 text-lg text-gray-300">JavaScript</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/bootstrap.jpg" alt="bootstrap" class="w-10 h-10">
-          <span class="mt-2 text-lg">Bootstrap</span>
+          <img src="./assets/images/bootstrap.jpg" alt="bootstrap" class="w-10 h-10 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">Bootstrap</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/primeng-logo.png" alt="bootstrap" class="w-10 h-10">
-          <span class="mt-2 text-lg">PrimeNG</span>
+          <img src="./assets/images/primeng-logo.png" alt="primeng" class="w-10 h-10 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">PrimeNG</span>
         </li>
       </ul>
     </div>
 
     <!-- Backend and Database Skills -->
     <div>
-      <h2 class="text-2xl font-bold mb-4">Backend & Database</h2>
-      <hr><br>
+      <h2 class="text-2xl font-bold mb-4 text-yellow-400">Backend & Database</h2>
+      <hr class="border-yellow-400 mb-4">
       <ul class="flex flex-wrap justify-center gap-6">
         <li class="flex flex-col items-center">
+          <img src="./assets/images/python.png" alt="python" class="w-14 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">Python FastAPI</span>
+        </li>
+        <li class="flex flex-col items-center">
+          <img src="./assets/images/node.webp" alt="nodejs" class="w-14 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">NodeJs</span>
+        </li>
+        <li class="flex flex-col items-center">
           <i class="fa-solid fa-database text-green-500 text-5xl"></i>
-          <span class="mt-2 text-lg">Oracle</span>
+          <span class="mt-2 text-lg text-gray-300">Oracle</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/postgresql-icon-1987x2048-v2fkmdaw.png" alt="pg" class="w-10 h-10">
-          <span class="mt-2 text-lg">Postgres</span>
+          <img src="./assets/images/postgresql-icon-1987x2048-v2fkmdaw.png" alt="postgres" class="w-10 h-10 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">Postgres</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/cb.png" alt="couchbase" class="w-10 h-10">
-          <span class="mt-2 text-lg">Couchbase</span>
+          <img src="./assets/images/mongo.png" alt="mongodb" class="w-10 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">MongoDB</span>
+        </li>
+        <li class="flex flex-col items-center">
+          <img src="./assets/images/cb.png" alt="couchbase" class="w-10 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">Couchbase</span>
         </li>
       </ul>
     </div>
 
+    <!-- Other Skills -->
     <div>
-      <h2 class="text-2xl font-bold mb-4">Other Skills</h2>
-      <hr><br>
+      <h2 class="text-2xl font-bold mb-4 text-yellow-400">Other Skills</h2>
+      <hr class="border-yellow-400 mb-4">
       <ul class="flex flex-wrap justify-center gap-6">
         <li class="flex flex-col items-center">
-          <img src="./assets/images/github.png" alt="git" class="w-10 h-10 bg-gray-200">
-          <span class="mt-2 text-lg">Git/GitLab/GitHub</span>
+          <img src="./assets/images/github.png" alt="github" class="w-10 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">Git/GitLab/GitHub</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/CICD.webp" alt="cicd" class="w-10 h-10 bg-gray-200">
-          <span class="mt-2 text-lg">CI/CD</span>
+          <img src="./assets/images/CICD.webp" alt="cicd" class="w-10 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">CI/CD</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/api.png" alt="git" class="w-10 h-10 bg-gray-200">
-          <span class="mt-2 text-lg">REST APIs</span>
+          <img src="./assets/images/api.png" alt="rest-api" class="w-10 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">REST APIs</span>
         </li>
         <li class="flex flex-col items-center">
-          <img src="./assets/images/websocket.png" alt="git" class="w-10 h-10 bg-gray-200">
-          <span class="mt-2 text-lg">WebSocket APIs</span>
+          <img src="./assets/images/websocket.png" alt="websocket" class="w-10 h-10 bg-gray-200 rounded-lg shadow-md">
+          <span class="mt-2 text-lg text-gray-300">WebSocket APIs</span>
         </li>
       </ul>
     </div>

@@ -1,22 +1,31 @@
 <div class="contact flex flex-col items-center justify-center min-h-screen text-white text-center p-10">
-  <h2 class="text-5xl font-bold">Get in Touch<i class="fa-solid fa-handshake text-purple-100 ml-2"></i></h2>
-  <div class="mt-6 space-y-4 text-center">
-    <div class="mail">
-      <a href="mailto:your.email@example.com" class="text-gray-900 text-2xl hover:underline">
-        <i class="fa-solid fa-envelope-circle-check text-purple-500 text-2xl ml-2"></i> poojagaikwad28603&#64;gmail.com
-      </a>
-    </div>
-    <br />
-    <div class="linkedin">
-      <a href="https://linkedin.com/in/poojasanjaygaikwad" target="_blank"
-        class="text-gray-900 text-lg hover:underline m-1">
-        <i class="fa-solid fa-link text-purple-600 text-2xl ml-2"></i> LinkedIn Profile
-      </a>
-    </div>
-  </div>
+  <h2 class="text-5xl font-bold mb-8">
+    Get in Touch <i class="fa-solid fa-handshake text-purple-100 ml-2"></i>
+  </h2>
+  <p class="text-lg max-w-2xl mb-8">
+    Find the details below for contact. </p>
 
-  <a href="./assets/images/pooja_gaikwad_resume.pdf" download
-    class="ripple-button mt-6 inline-block bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+  <!-- Contact Form -->
+  <form class="contact-form bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg">
+    <div class="mb-6">
+      <label for="name" class="block text-left text-lg font-semibold mb-2">Name</label>
+      <p class="w-full p-3 rounded-lg bg-gray-700 text-white">Pooja Gaikwad</p>
+    </div>
+    <div class="mb-6">
+      <label for="email" class="block text-left text-lg font-semibold mb-2">Email</label>
+      <p class="w-full p-3 rounded-lg bg-gray-700 text-white">poojagaikwad28603&#64;gmail.com</p>
+    </div>
+    <div class="mb-6">
+      <label for="linkedin" class="block text-left text-lg font-semibold mb-2">LinkedIn Profile</label>
+      <a href="https://www.linkedin.com/in/poojasanjaygaikwad" target="_blank" class="text-purple-400 hover:underline">
+        www.linkedin.com/in/poojasanjaygaikwad
+      </a>
+    </div>
+  </form>
+
+  <!-- Download Resume Button -->
+  <a href="assets/images/pooja_gaikwad_resume.pdf" download
+    class="ripple-button mt-6 inline-block bg-green-700 text-white px-6 py-3 rounded-lg hover:bg-green-600 relative overflow-hidden">
     <i class="fa-solid fa-download ml-2"></i> Download Resume
   </a>
 </div>

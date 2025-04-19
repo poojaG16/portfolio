@@ -1,11 +1,14 @@
- 
-  .project-card {
-    max-height: 100%;
-    max-width: 100%;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
+.project-card {
+  height: auto; /* Ensures all cards have the same height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* Required for absolute positioning of details */
+  overflow: hidden; /* Prevents content overflow */
+}
+
+.project-details {
+  position: relative; /* Ensure it stays within the card */
+  display: block; /* Ensure it is displayed when *ngIf is true */
+  margin-top: 1rem; /* Add spacing from the card */
+}
